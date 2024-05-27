@@ -1,0 +1,51 @@
+.active {
+    @apply text-orange-700 font-bold;
+}
+
+.nav {
+    @apply relative container z-50 mx-auto p-6;
+}
+
+.nav_large_container {
+    @apply flex items-center justify-between
+}
+
+.logo_container {
+    @apply pt-2 flex space-x-3;
+}
+
+.navmenu_container {
+    @apply hidden md:flex space-x-6
+}
+
+.menu_btn {
+    @apply block md:hidden focus:outline-none
+}
+
+.mobile_menu_container {
+    @apply absolute self-end py-8 mt-10 space-y-6 font-bold bg-blue-900 rounded-md sm:w-auto sm:self-center left-6 right-6 drop-shadow-md transition-all duration-500
+}
+
+.navlist_container {
+    @apply relative;
+}
+
+.navlist_dropDown_btn {
+    @apply flex items-center justify-between w-full py-2 px-4 md:border-0 hover:text-gray-400 md:p-0 md:w-auto
+}
+
+.navlist_dropdown_container {
+    @apply absolute md:right-0 md:mt-5 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-full md:min-w-56 dark:bg-gray-700 dark:divide-gray-600
+}
+
+.navlistSubMenu_ul {
+    @apply py-2 text-sm text-gray-700 dark:text-gray-200
+}
+
+.navlistSunMenu_li {
+    @apply block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white
+}
+
+.navlist_list {
+    @apply w-full text-center md:w-[auto] hover:text-orange-700
+}
