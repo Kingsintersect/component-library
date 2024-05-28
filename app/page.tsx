@@ -1,23 +1,9 @@
 import Button from "@/app/components/Button";
 import NavBar from "./components/NavBar";
-import { menuItems } from "./lib/constants";
-import { UserCircleIcon, TrashIcon } from "@heroicons/react/24/outline";
+import { accordionItems, menuItems } from "./lib/constants";
+import { UserCircleIcon } from "@heroicons/react/24/outline";
 import { FC } from "react";
 import Accordion, { AccordionProvider } from "./components/accordions/Accordion";
-const items = [
-  {
-    title: 'Accordion Item 1',
-    content: 'Content for Accordion Item 1',
-  },
-  {
-    title: 'Accordion Item 2',
-    content: 'Content for Accordion Item 2',
-  },
-  {
-    title: 'Accordion Item 3',
-    content: 'Content for Accordion Item 3',
-  },
-];
 
 const Home: FC = () => {
   const isLoading = true;
@@ -31,7 +17,7 @@ const Home: FC = () => {
             <AccordionProvider>
               <div className="p-4">
                 <h1 className="text-2xl font-bold mb-4">Accordion Example</h1>
-                <Accordion items={items} />
+                <Accordion items={accordionItems} />
               </div>
             </AccordionProvider>
           </div>

@@ -202,3 +202,18 @@ export const productDetailData = {
     ]
 
 }
+
+export const accordionItems = [
+    {
+        title: 'Accordion Item 1',
+        content: 'Content for Accordion Item 1',
+    },
+    {
+        title: 'Accordion Item 2',
+        content: 'Content for Accordion Item 2',
+    },
+    {
+        title: 'Accordion Item 3',
+        content: 'Content for Accordion Item 3',
+    },
+];
