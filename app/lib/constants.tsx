@@ -15,6 +15,59 @@ export const menuItems: MenuItem[] = [
 ];
 
 
+export const heroCarouselData = [
+    {
+        colorDeep: "#802FDE",
+        colorLite: "#E8E2F7",
+        mainText: "Innovative",
+        buttonText: "LEt's Go",
+        subText: "Regardless of if you’re starting a new company and in need of a logo Regardless of if you’re starting a new company and in need of a logo.Regardless of if you’re starting a new company and in need of a logo.",
+        shadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        mobileShadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        img: "/pictures/nature-1.jpg",
+    },
+    {
+        colorDeep: "#E50087",
+        colorLite: "#FFE5F4",
+        mainText: "Time Concious",
+        buttonText: "LEt's Go",
+        subText: "Regardless of if you’re starting a new company and in need of a logo. Regardless of if you’re starting a new company and in need of a logo.",
+        shadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        mobileShadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        img: "/pictures/nature-2.jpg",
+    },
+    {
+        colorDeep: "#14B789",
+        colorLite: "#D5F8EF",
+        mainText: "Result Driven",
+        buttonText: "LEt's Go",
+        subText: "Regardless of if you’re starting a new company and in need of a logo. Regardless of if you’re starting a new company Regardless of if you’re starting a new company and in need of a logo. and in need of a logo.",
+        shadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        mobileShadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        img: "/pictures/nature-3.jpg",
+    },
+    {
+        colorDeep: "#00AEE5",
+        colorLite: "#D8F6FF",
+        mainText: "At Your Service (24/7)",
+        buttonText: "LEt's Go",
+        subText: "Regardless of if you’re starting a new company and in need of a logo. Regardless of if you’re starting a new company and in need of a logo.",
+        shadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        mobileShadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        img: "/pictures/nature-4.jpg",
+    },
+    {
+        colorDeep: "#DAAB00",
+        colorLite: "#FDF3CE",
+        mainText: "Result Driven",
+        buttonText: "LEt's Go",
+        subText: "Regardless of if you’re starting a new company and in need of a logo. Regardless of if you’re starting a new company and in need of a logo. Regardless of if you’re starting a new company and in need of a logo.",
+        shadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        mobileShadow: "0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important",
+        img: "/pictures/nature-5.jpg",
+    },
+];
+
 export const data = [
     {
         colorDeep: "#802FDE",

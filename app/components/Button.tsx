@@ -5,13 +5,25 @@ import { VariantProps, cva } from 'class-variance-authority';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
     children: ReactNode;
+    to?: string;
     isLoading?: boolean;
     icon?: React.ReactElement;
 }
 
-const Button: FC<ButtonProps> = ({ children, className, isLoading, icon, variant, size, iconPosition, ...props }) => {
+const Button: FC<ButtonProps> = ({ to, children, className, isLoading, icon, variant, size, iconPosition, ...props }) => {
+    const history = [];
+
+    const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+        if (!props.disabled) {
+            if (to) {
+                history.push(to); console.log(1)
+            } else {
+                props.onClick && props.onClick(e);
+            }
+        }
+    };
     return (
-        <button className={cn(buttonVariants({ variant, size, iconPosition, className }))} {...props}>
+        <button className={cn(buttonVariants({ variant, size, iconPosition, className }))} {...props} >
             {children}
             {isLoading &&
                 <IconContainer>

@@ -24,12 +24,12 @@ const ProductSlider: React.FC<IProductProps> = ({ accentColor, productData }) =>
     return (
         <>
             <Swiper
-                rewind={true}
-                modules={[Autoplay, EffectFlip, Navigation, Pagination, A11y]}
+                slidesPerView={4}
+                loop={true}
+                modules={[Autoplay, Navigation, Pagination, A11y]}
                 spaceBetween={50}
                 speed={2000}
                 autoplay={{ delay: 2000, disableOnInteraction: false }}
-                effect={'flip'}
                 navigation
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => console.log(swiper)}

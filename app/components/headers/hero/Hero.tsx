@@ -37,7 +37,7 @@ const Hero: React.FC<IHeroData> = ({ accentColor, mainText, shadow, mobileShadow
                 <Button
                     type={`button`}
                     text='Get Started'
-                    className={`mt-3 lg:mt-8 text-md mdtext-xl font-bold py-2 md:py-4 px-4 focus:outline-none md:w-2/5 lg:w-1/2 2xl:w-2/5`}
+                    className={`mt-3 lg:mt-8 text-md md:text-xl font-bold py-2 md:py-4 px-4 focus:outline-none md:w-2/5 lg:w-1/2 2xl:w-2/5`}
                     style={windowWidth > 767 ? { backgroundColor: `${accentColor}`, boxShadow: `${shadow}` } : { backgroundColor: `${accentColor}`, boxShadow: `${mobileShadow}` }}
                 />
             </div>

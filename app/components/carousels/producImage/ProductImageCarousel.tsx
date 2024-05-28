@@ -34,6 +34,7 @@ const ProductImageCarousel: React.FC<ISlideProps> = ({ accentColor, slideItems }
     return (
         <>
             <Swiper
+                onSwiper={() => setThumbsSwiper}
                 rewind={true}
                 spaceBetween={10}
                 navigation={true}
@@ -49,7 +50,7 @@ const ProductImageCarousel: React.FC<ISlideProps> = ({ accentColor, slideItems }
                 ))}
             </Swiper>
             <Swiper
-                onSwiper={() => setThumbsSwiper}
+
                 spaceBetween={10}
                 slidesPerView={4}
                 freeMode={true}

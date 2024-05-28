@@ -18,9 +18,9 @@ const Button = (props: IButtonProps) => {
     const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
         if (!disabled) {
             if (to) {
-                history.push(to);
+                history.push(to); console.log(1)
             } else {
-                props.onClick && props.onClick(e)
+                props.onClick && props.onClick(e);
             }
         }
     };

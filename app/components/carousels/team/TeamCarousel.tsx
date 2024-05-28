@@ -45,7 +45,6 @@ const TeamCarousel: React.FC<ISlideProps> = ({ accentColor, slideItems }) => {
                         >
                             <p className="text-5xl">{item.title}</p>
                         </div>
-                        {/* <Image src={item.url} alt="Slider Image" className=' object-cover block' width={10000} height={10000} /> */}
                     </SwiperSlide>
                 ))}
             </Swiper>
