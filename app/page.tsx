@@ -5,6 +5,7 @@ import { TvIcon, UserCircleIcon, HandThumbUpIcon } from "@heroicons/react/24/sol
 import { FC } from "react";
 import Accordion, { AccordionProvider } from "./components/accordions/Accordion";
 import { AppleSignInButtons, FacebookSignInButton, GithubSignInButtons, GoogleSignInButtons, TwitterSignInButtons } from "./components/buttons/SocialButtons";
+import { MetaMaskPaymentButtons, OpraPayPaymentButtons, BitCoinPaymentButtons, PaypalPaymentButtons, ApplePayPaymentButtons, AmericanExpressPaymentButtons, VisaPaymentButtons, MasterCardPaymentButtons, PaymentButtons } from "./components/buttons/PaymentButtons";
 
 const Home: FC = () => {
   const isLoading = true;
@@ -29,6 +30,19 @@ const Home: FC = () => {
           <GithubSignInButtons>Button Loading</GithubSignInButtons>
           <GoogleSignInButtons>Button Loading</GoogleSignInButtons>
           <AppleSignInButtons>Button Loading</AppleSignInButtons>
+          <br />
+
+        </div>
+        <div className="flex items-center flex-wrap gap-4">
+          <MetaMaskPaymentButtons>Button Loading</MetaMaskPaymentButtons>
+          <OpraPayPaymentButtons>Button Loading</OpraPayPaymentButtons>
+          <BitCoinPaymentButtons>Button Loading</BitCoinPaymentButtons>
+          <PaypalPaymentButtons>Button Loading</PaypalPaymentButtons>
+          <ApplePayPaymentButtons>Button Loading</ApplePayPaymentButtons>
+          <AmericanExpressPaymentButtons>Button Loading</AmericanExpressPaymentButtons>
+          <VisaPaymentButtons>Button Loading</VisaPaymentButtons>
+          <MasterCardPaymentButtons>Button Loading</MasterCardPaymentButtons>
+          <PaymentButtons>Button Loading</PaymentButtons>
           <br />
 
         </div>
