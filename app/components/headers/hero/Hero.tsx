@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import Button from '../../buttons/Button';
+import Button from '@/app/components/buttons/Button';
 import Image from 'next/image';
 
 interface IHeroData {
@@ -36,10 +36,9 @@ const Hero: React.FC<IHeroData> = ({ accentColor, mainText, shadow, mobileShadow
                 <p className="leading-normal md:text-2xl text-md text-navy">{subText}</p>
                 <Button
                     type={`button`}
-                    text='Get Started'
-                    className={`mt-3 lg:mt-8 text-md md:text-xl font-bold py-2 md:py-4 px-4 focus:outline-none md:w-2/5 lg:w-1/2 2xl:w-2/5`}
+                    className={`text-center flex items-center justify-center mt-3 lg:mt-8 text-md md:text-xl font-bold py-2 md:py-4 px-4 focus:outline-none md:w-2/5 lg:w-1/2 2xl:w-2/5`}
                     style={windowWidth > 767 ? { backgroundColor: `${accentColor}`, boxShadow: `${shadow}` } : { backgroundColor: `${accentColor}`, boxShadow: `${mobileShadow}` }}
-                />
+                >Get Started</Button>
             </div>
             {img && <div className="lg:w-3/5 w-full lg:mt-6 relative">
                 <Image src={img} alt="Hero Image" loading='eager' className='w-3/5 mx-auto' width={500} height={300} />

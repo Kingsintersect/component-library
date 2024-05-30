@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import styles from '../styles/Navbar.module.css'
 import { BeakerIcon, TrashIcon } from '@heroicons/react/24/outline';
-import Button from './Button';
+import Button from './buttons/Button';
 import Modal from './modals/Modal';
 
 type extended = {

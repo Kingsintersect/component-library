@@ -1,9 +1,10 @@
-import Button from "@/app/components/Button";
+import Button from "@/app/components/buttons/Button";
 import NavBar from "./components/NavBar";
 import { accordionItems, menuItems } from "./lib/constants";
-import { UserCircleIcon } from "@heroicons/react/24/outline";
+import { TvIcon, UserCircleIcon, HandThumbUpIcon } from "@heroicons/react/24/solid";
 import { FC } from "react";
 import Accordion, { AccordionProvider } from "./components/accordions/Accordion";
+import { AppleSignInButtons, FacebookSignInButton, GithubSignInButtons, GoogleSignInButtons, TwitterSignInButtons } from "./components/buttons/SocialButtons";
 
 const Home: FC = () => {
   const isLoading = true;
@@ -22,9 +23,19 @@ const Home: FC = () => {
             </AccordionProvider>
           </div>
         </div>
+        <div className="flex items-center flex-wrap gap-4">
+          <FacebookSignInButton>Button Loading</FacebookSignInButton>
+          <TwitterSignInButtons>Button Loading</TwitterSignInButtons>
+          <GithubSignInButtons>Button Loading</GithubSignInButtons>
+          <GoogleSignInButtons>Button Loading</GoogleSignInButtons>
+          <AppleSignInButtons>Button Loading</AppleSignInButtons>
+          <br />
+
+        </div>
         <div className="flex items-center gap-4">
-          <Button variant={"secondary"} isLoading={true}>Button</Button>
-          <Button variant={"success"}>Button</Button>
+          <Button variant={"secondary"} isLoading={true}>Button Loading</Button>
+          <Button variant={"primaryIconButtonOutline"} size={"xs"} className="rounded-lg"><HandThumbUpIcon width={30} /></Button>
+          <Button variant={"success"} disabled>Button disabled</Button>
           <Button variant={"info"}>Button</Button>
           <Button variant={"warning"}>Button</Button>
           <Button variant={"danger"}>Button</Button>

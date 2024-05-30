@@ -56,9 +56,8 @@ const Header: React.FC<IHeader> = ({ accentColor, navItems, logo }) => {
                 <Button
                     className={`px-10 py-3 md:text-base text-center text-sm`}
                     type={`button`}
-                    text='Get Started'
                     style={{ backgroundColor: `${accentColor}` }}
-                />
+                >Get Started</Button>
             </nav>
         </header>
     )

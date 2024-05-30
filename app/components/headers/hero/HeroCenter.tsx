@@ -34,10 +34,9 @@ const HeroCenter: FC<IHeroData> = ({ mainText, subText, accentColor, shadow, mob
 
                 <Button
                     type={`button`}
-                    text={buttonText}
                     className={`mt-7 lg:mt-8 text-md md:text-xl font-bold py-2 md:py-3 px-4 focus:outline-none md:w-2/6 lg:w-1/4 2xl:w-2/5`}
                     style={windowWidth > 767 ? { backgroundColor: `${accentColor}`, boxShadow: `${shadow}` } : { backgroundColor: `${accentColor}`, boxShadow: `${mobileShadow}` }}
-                />
+                >Getting started</Button>
             </div>
         </section>
     )
