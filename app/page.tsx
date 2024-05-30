@@ -10,7 +10,7 @@ const Home: FC = () => {
   return (
     <>
       <NavBar brandName="LOGO" imageSrcPath={"/public/"} menuItems={menuItems} />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="flex space-y-5 min-h-screen flex-col items-center justify-between p-24">
         <h1>Component Libraries...</h1>
         <div className="flex items-center justify-center w-full">
           <div className="w-2/3 mx-auto">
@@ -23,13 +23,32 @@ const Home: FC = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <Button>Button</Button>
-          <Button className="text-blue-700 border border-blue-700 hover:scale-105">Button</Button>
-          <Button variant={"secondary"}>Button</Button>
+          <Button variant={"secondary"} isLoading={true}>Button</Button>
+          <Button variant={"success"}>Button</Button>
+          <Button variant={"info"}>Button</Button>
+          <Button variant={"warning"}>Button</Button>
           <Button variant={"danger"}>Button</Button>
           <Button variant={"primary"} size={"lg"} isLoading>Button</Button>
-          <Button variant={"primary"} size={"lg"} font={"bold"} icon={<UserCircleIcon width={"20px"} />}>Button</Button>
-          <Button variant={"primary"} size={"lg"} font={"bold"} iconPosition={"left"} icon={<UserCircleIcon width={"20px"} />}>Button</Button>
+          <br />
+
+        </div>
+        <div className="flex items-center gap-4">
+          <Button variant={"secondaryGradiant"}>Button</Button>
+          <Button variant={"successGradiant"}>Button</Button>
+          <Button variant={"infoGradiant"}>Button</Button>
+          <Button variant={"warningGradiant"}>Button</Button>
+          <Button variant={"dangerGradiant"}>Button</Button>
+          <Button variant={"primaryGradiant"} size={"lg"} isLoading>Button</Button>
+          <br />
+
+        </div>
+        <div className="flex items-center gap-4">
+          <Button variant={"secondaryOutline"}>Button</Button>
+          <Button variant={"successOutline"}>Button</Button>
+          <Button variant={"infoOutline"}>Button</Button>
+          <Button variant={"warningOutline"}>Button</Button>
+          <Button variant={"dangerOutline"}>Button</Button>
+          <Button variant={"primaryOutline"} size={"lg"} isLoading>Button</Button>
           <br />
 
         </div>

@@ -1,6 +1,7 @@
 import { MenuItem } from "../components/NavBar";
 
 export const menuItems: MenuItem[] = [
+    { menuText: 'Play Ground', menuUrl: '/playground' },
     { menuText: 'Administrator', menuUrl: '/dashboard' },
     { menuText: 'About', menuUrl: '/about' },
     { menuText: 'Gallery', menuUrl: '/gallery' },
@@ -117,6 +118,7 @@ export const data = [
 ];
 export const navItems = [
     { label: "Home", url: "/" },
+    { label: "Play Ground", url: "/playground" },
     { label: "About Us", url: "/about" },
     { label: "Image Gallery", url: "/gallery" },
     { label: "Administrator", url: "/dashboard" },
