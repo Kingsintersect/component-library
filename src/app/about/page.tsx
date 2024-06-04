@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderHeroCarousel from '@/app/components/carousels/HeaderHeroCarousel'
 import CubicCarousel from '@/app/components/carousels/cubic/CubicCarousel'
 import { slideMenu } from '@/app/lib/constants'
-
+import ZoomableImage from '../components/imagezoom/ZoomableImage'
 
 const About = () => {
     return (
@@ -13,6 +13,11 @@ const About = () => {
             <div className="grid grid-cols-1 space-y-12 py-12">
                 <div className="">
                     <CubicCarousel slideItems={slideMenu} />
+                </div>
+            </div>
+            <div className="grid grid-cols-1 space-y-12 py-12">
+                <div className="">
+                    <ZoomableImage />
                 </div>
             </div>
         </>

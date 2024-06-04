@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./styles/poppins.font.css"
 import "./styles/globals.css";
-import NavBar, { MenuItem } from "./components/NavBar";
 import PagePreloader from "./components/preloaders/PagePreloader";
 
 const inter = Inter({ subsets: ["latin"] });
